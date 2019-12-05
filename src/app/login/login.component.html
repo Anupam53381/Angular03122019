@@ -1,0 +1,17 @@
+
+<div>
+
+    <p *ngIf=isloginSuccessful> {{ errorMessage }}</p>
+</div>
+
+
+<div>
+
+    User Name : <input type=text name='username'  [(ngModel)]='username'>
+
+    Password  : <input type=password name='password' [(ngModel)]='password'>
+
+
+    <button (click)=loginHandle()> Login </button>
+
+</div>
